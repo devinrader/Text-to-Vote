@@ -71,7 +71,13 @@
 						.left(60)
 						.width(x);
 
-					/* Y-axis label */
+                    /* The value label. */
+                    bar.anchor("left").add(pv.Label)
+                        .textStyle("white")
+                        .textBaseline("middle")
+                        .left(70)
+                        .font("48px Helvetica")
+                        .text(function(d) d.toFixed(0));					/* Y-axis label */
 					vis.add(pv.Label)
 						.data(["Team Number"])
 						.left(-63)
@@ -90,13 +96,13 @@
 
 					bar.anchor("left").add(pv.Label)
 						.textMargin(5)
-						.left(55)
+						.left(-25)
 						.textAlign("right")
 						.font("bold 30px Helvetica")
 						.text(function() this.index + 1);
 
 					what.add(pv.Image)
-						.left(-40)
+						.left(-20)
 						.top(function() y(this.index) + ((y.range().band / 2) - (this.height() / 2)))
 						.width(64)
 						.height(64)
