@@ -1,8 +1,8 @@
 <?php
-	define('POLL_NAME', 'Sample Poll');
+	define('STARTUPCAMP7', 'StartupCamp 7');
 
 	// Replace with your Twilio number
-	define('PHONE_NUMBER', '(123) 456-7890');
+	define('PHONE_NUMBER', '(561) 299-3095');
 
 	// Change 'Team 1', 'Team 2', etc. to the names of the teams.
 	$teams[] = 'Team 1';
